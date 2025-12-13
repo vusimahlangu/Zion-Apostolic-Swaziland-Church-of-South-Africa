@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zion Apostolic Swaziland Church</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #2c5fa5;
+            --secondary-blue: #1e4a8a;
+            --accent-gold: #d4af37;
+            --white: #ffffff;
+            --light-gray: #f5f7fa;
+            --dark: #333333;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: var(--light-gray); }
+        .header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .header p { font-size: 1.1rem; opacity: 0.9; }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--primary-blue);
+        }
+        .card h2 {
+            color: var(--primary-blue);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .stat {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        .btn:hover { background: var(--secondary-blue); }
+        .footer {
+            background: var(--secondary-blue);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fas fa-church"></i> Zion Apostolic Swaziland Church</h1>
+        <p>NPO Registration: 2023/757388/08</p>
+        <p><i class="fas fa-phone"></i> Youth President: 072 276 7670</p>
+        <p><i class="fas fa-cross"></i> Building Faith, Unity, and the Future of Our Youth</p>
+    </header>
+    <main class="container">
+        <div class="dashboard">
+            <div class="card">
+                <h2><i class="fas fa-chart-line"></i> Church Statistics</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">9</div>
+                        <div>Provinces</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1985</div>
+                        <div>Founded</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">R100</div>
+                        <div>Annual Fee</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">16+</div>
+                        <div>Age Limit</div>
+                    </div>
+                </div>
+                <a href="#" class="btn" onclick="alert('Registration coming soon!')">
+                    <i class="fas fa-user-plus"></i> Join Our Church
+                </a>
+            </div>
+            <div class="card">
+                <h2><i class="fas fa-hands-helping"></i> Youth Programs</h2>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Church Choir Competition</li>
+                    <li>National Youth Trip to Durban</li>
+                    <li>Sports Development</li>
+                    <li>Educational Tours</li>
+                </ul>
+                <a href="#" class="btn" onclick="alert('Youth programs coming soon!')">
+                    <i class="fas fa-calendar-check"></i> View Programs
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <h2><i class="fas fa-info-circle"></i> About Our Church</h2>
+            <p>Zion Apostolic Swaziland Church is a registered NPO (2023/757388/08) serving all 9 provinces of South Africa with spiritual guidance and youth development programs.</p>
+            <div style="margin-top: 1rem; padding: 1rem; background: var(--light-gray); border-radius: 8px;">
+                <h3>Contact Information:</h3>
+                <p><strong>Youth President:</strong> Mr. S. Shongwe</p>
+                <p><strong>Phone:</strong> 072 276 7670</p>
+                <p><strong>Email:</strong> youth@zionchurch.org.za</p>
+                <p><strong>Headquarters:</strong> All National Branches, South Africa</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2025 Zion Apostolic Swaziland Church of South Africa</p>
+        <p>NPO Registration: 2023/757388/08 | Youth President: 072 276 7670</p>
+        <p style="margin-top: 1rem; font-style: italic;">
+            "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life." - John 3:16
+        </p>
+    </footer>
+</body>
+</html>
